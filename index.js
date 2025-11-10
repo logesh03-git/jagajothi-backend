@@ -21,6 +21,9 @@ app.use(cors({
   },
   methods: ["GET", "POST"],
 }));
+
+app.options('*', cors());
+
 app.use(express.json());
 
 // --- Define your API routes (unchanged) ---
